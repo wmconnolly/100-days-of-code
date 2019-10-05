@@ -48,3 +48,15 @@ Finished walking through _Go in Action_'s chapter 2 code. There is a disclaimer 
   + Uppercase means it's exported! Uppercase named things can be accessed from outside the code file which defines it. lowercased items cannot be _directly_ accessed from outside. This will be important for me to keep in mind.
 
 **Thoughts:** _Go in Action_ is without a doubt a great book, however; I'll need to replace it with a resource that presents Go in more of a compartmentalised way so that I can really soak in the basics. _Go in Action_ should help to drive home the language in a wholistic view, and I'll be sure to spend five minutes with it at the end of each day. _Go by Example_ will be my primary resource for now.
+
+------
+## Day 3, October 5, 2019
+
+**Today's Progress:** `variables, contstants, for loops`.
+  + `var` or `const` is required when a named value isn't initialized on declaration.
+  + `const` is acutally constant, no symbolism here :D
+  + `for` loops have a few different constructions, get one, and you can confidently infer the others
+    + simultaneous arithmetic operation/assignment works `+=, *=, -=` will all act on your incrementing variable!
+	+ _`for` is the only loop available_
+
+**Thoughts:** Given that `for` is the only loop in Go, I'm curious what the idiomatic pattern is to replicate a `while` loop... _what's the best-practice sential value?_ The way Go shakes off inheritance in favour for composition gives the language huge leverage. You can still _write_ code with a sort-of object orientation, but it's **functional**. With this kind of 'plug and play' approach, I'm not surprised to read frequently that folks applaud Go as a language for implementing microservices. So excited to ramp up in this language, and (hopefully) build useful things!

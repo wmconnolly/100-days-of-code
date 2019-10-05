@@ -30,3 +30,21 @@ _Voilá_. It was really cool to actually run chapter2's program, and _wow was it
 ](https://www.npr.org/2019/10/03/766706899/nasas-new-black-hole-model)
 
 **Thoughts:** _Errors aren't evil_. Use them when you get them, Go's structure will be an adjustment; though I believe it's actually much clearer than having a cocktail of global/local dependecies. Go certainly does allow for globally available packages, however, I think to have them is just a bit more explicit of a process; and if you're coming to Go from where I am - explicit is better than implicit ;)
+
+-----
+
+## Day 2: October 4, 2019
+
+**Today's Progress:**
+Finished walking through _Go in Action_'s chapter 2 code. There is a disclaimer in the beginning of the chapter that it's ok _not to_ fully understand the code the first, second, maybe even third time through. Good disclaimer! The example is a well organised bit of Go code, I'm sure; though it's _much too_ complex for me to feel like I'm building up a base with the language -- too much 'plate spinning' upfront. Having said that, the chapter **certainly** imparts some great insight about the language. A few points on that:
+  + `Go` passes all variables by **value**, not reference. So, pointer variables allow direct modification of variables out of function scope -- this is useful in sharing variables between functions, even concurrent `goroutines`
+  + Pulling out a value from a map (like a Python dictionary, or JS object), you have the option to assign a second, boolean variable from the return of the `'map'[key]` lookup.
+  ie
+	```go
+	value, found := someMapObject[key]
+	```
+	`found` equals true when there's an entry for the lookup, false otherwise. This is cool!
+
+  + Uppercase means it's exported! Uppercase named things can be accessed from outside the code file which defines it. lowercased items cannot be _directly_ accessed from outside. This will be important for me to keep in mind.
+
+**Thoughts:** _Go in Action_ is without a doubt a great book, however; I'll need to replace it with a resource that presents Go in more of a compartmentalised way so that I can really soak in the basics. _Go in Action_ should help to drive home the language in a wholistic view, and I'll be sure to spend five minutes with it at the end of each day. _Go by Example_ will be my primary resource for now.

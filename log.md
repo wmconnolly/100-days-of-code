@@ -73,6 +73,6 @@ Finished walking through _Go in Action_'s chapter 2 code. There is a disclaimer 
 - Covered in _Go by Example_: `if / else / switch / array / slice` + you can declare / init a variable within a conditional check, and continue to use it in the _same conditional branch it was created within_
   - arrays are of fixed length and type + slices are arrays with dynamic length (ie still singularly typed) + both can be multi-dimensional, and use the `[:]` syntax to take _slices_
     around objects in `Go` + switch cases check for equality: either value or type, depending on how the case is presented. i.e `case 3:` checks that the `switch` specified var equals interger 3. `case bool:` check that the given var is a `boolean` type.
-- The `package` _is_ the orientation
+- The `package` _is_ the orientation around creating objects
 
 **Thoughts:** Currently mulling over the thought that Python spoils developers with it's dynamic lists, and list comprehension syntax. Highly interested to see whether `Go` has an approach, or if I'll just have to get used to the array / slice structures; which would be a net-good thing. Really enjoying learning this language

@@ -76,3 +76,15 @@ Finished walking through _Go in Action_'s chapter 2 code. There is a disclaimer 
 - The `package` _is_ the orientation around creating objects
 
 **Thoughts:** Currently mulling over the thought that Python spoils developers with it's dynamic lists, and list comprehension syntax. Highly interested to see whether `Go` has an approach, or if I'll just have to get used to the array / slice structures; which would be a net-good thing. Really enjoying learning this language
+
+## Day 5, October 7, 2019
+
+**Today's Progress:** Relatively minimal today in terms of topics covered, but the syntax felt like it's actually starting to soak-in. Looked at the `map` associative data type, and the `range` iterator. Unless there's another iterator which will pop-up later, it looks as if `Go` has _one_ loop, and iterator keyword. Simple, nice.
+A few observations from today:
+
+- to initialize slices and maps, we primarily use the `make` keyword. Haven't seen Arrays made with make, and contain its defined length inside `[]`
+- the `:=` syntax is _only used_ when initialising a variable. **Should** be, and is, obvious; but really started to feel the truth of it in my fingers for first time
+- `range` returns the index of the iterable first, values second. If index isn't needed, use the `_` ignore var. With maps, we easily have choice of key/value or just key
+- `map` has typed keys AND values. Ridgid typing, but I can picture the saved confusion of trying to pin-point what 'xyz' is at any given point -- we'll know, becuase we've typed it that way.
+
+  **Thoughts:** It's super easy to become distracted with tooling, but with _just_ enough discipline, the attention paid to refining it is high-value... In Vim, I can now run my little sandbox `main.go` via a simple `<leader>r` -- rock on.

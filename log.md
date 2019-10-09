@@ -88,3 +88,20 @@ A few observations from today:
 - `map` has typed keys AND values. Ridgid typing, but I can picture the saved confusion of trying to pin-point what 'xyz' is at any given point -- we'll know, becuase we've typed it that way.
 
   **Thoughts:** It's super easy to become distracted with tooling, but with _just_ enough discipline, the attention paid to refining it is high-value... In Vim, I can now run my little sandbox `main.go` via a simple `<leader>r` -- rock on.
+
+## Day 6, October 8, 2019
+
+**Today's Progress:**
+
+- Functions
+
+  - Go does not implicitly return, we _must_ use a `return` statement
+  - Return value(s) typed just before launching into a `{...}` code block
+  - The blank identifier `_` is used to move past irrelevant return values, when a function returns more than one value
+  - Can accept several different types of parameters, but can only accept one type of varying number of args, declared as the last parameter in the function's signature.
+    ```go
+    func exName(arg1 int, arg2 string, variadic ...int) {...}
+    ```
+  - Closures have access to variables from the scope above the anonymous function's declaration, but I'm going to have to step through this again tomorrow!
+
+  **Thoughts:** Family circumstances will make the challenge more difficult to fulfil, but I'm prepared to cut through the challenge. First of three challenging days in the books!

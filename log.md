@@ -89,6 +89,8 @@ A few observations from today:
 
   **Thoughts:** It's super easy to become distracted with tooling, but with _just_ enough discipline, the attention paid to refining it is high-value... In Vim, I can now run my little sandbox `main.go` via a simple `<leader>r` -- rock on.
 
+---
+
 ## Day 6, October 8, 2019
 
 **Today's Progress:**
@@ -105,3 +107,35 @@ A few observations from today:
   - Closures have access to variables from the scope above the anonymous function's declaration, but I'm going to have to step through this again tomorrow!
 
   **Thoughts:** Family circumstances will make the challenge more difficult to fulfil, but I'm prepared to cut through the challenge. First of three challenging days in the books!
+
+---
+
+## Day 7, October 9, 2019
+
+**Today's Progress:** Closures click much better now.
+
+```go
+func theClosure() func(ifParam type) type {
+  outerStateVar := value
+  return func(ifParam type) type {
+    `do work`
+    return outerStateVar
+  }
+}
+```
+
+**Thoughts:** What was confusing me yesterday, and what I still don't _fully_ understand why today, is the named function signature; specifically why we can't do something like:
+
+```go
+func theClosure() func {
+  return func(param type) type {
+    work...
+    }
+}
+```
+
+I've got questions about the anonymous function being in-place of the named function's return type. **Maybe** that's the point? Perhaps the return type of a function which returns a function is the fully typed signature of that inner (anon) function?
+
+... While I'm not the _best_ at math, I often wonder if I would have enjoyed a CS degree more than my one in commerce.
+
+In any event, closures in Go are cool.

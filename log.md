@@ -139,3 +139,47 @@ I've got questions about the anonymous function being in-place of the named func
 ... While I'm not the _best_ at math, I often wonder if I would have enjoyed a CS degree more than my one in commerce.
 
 In any event, closures in Go are cool.
+
+---
+
+## Day 8, October 10, 2019
+
+**Today's Progress:**
+
+- Recursion
+  - If condition on the argument isn't met, it returns a call to itself with the argument modified in some way
+- Pointers
+
+  - Thinking about this like deep v shallow [e.g. copying]
+
+  ```go
+  a := 1
+  b := a // b now has the [face]value of 1
+  a = 2
+  fmt.Println(b) // outputs 1 for reason above
+  ```
+
+  not using a pointer literally hard codes the value of the existing varialbe (`a` in this case) at time of assignment
+
+  ```go
+  a := "point to this"
+  b := &a // b now equals the address in memory of a, or 'points' to the memory address
+  fmt.Println(b) // outputs memory addr
+  fmt.Println(*b) // outputs a's value; "point to this"
+  ```
+
+- Structs
+
+  - Look like a map; key/type (...then value) pairs under the umbrella of a custom type
+
+  ```go
+  type Custom struct {
+    prop1: string
+    prop2: int
+    isAwesome: bool
+  }
+  ```
+
+  Need to init structs with explicit values for each field, or key.
+
+  **Thoughts:** Need to revist structs tomorrow - tired. Having said that, tonight is day three of three days this week which were more of a challenge to make time/space to focus on #100Days; so I'm pleased! Loving Go... I thought I didn't like strongly typed languages :)

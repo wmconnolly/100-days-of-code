@@ -183,3 +183,51 @@ In any event, closures in Go are cool.
   Need to init structs with explicit values for each field, or key.
 
   **Thoughts:** Need to revist structs tomorrow - tired. Having said that, tonight is day three of three days this week which were more of a challenge to make time/space to focus on #100Days; so I'm pleased! Loving Go... I thought I didn't like strongly typed languages :)
+
+---
+
+## Day 9, October 11, 2019
+
+**Today's Progress:**
+
+- Correction on initing a `struct`
+
+  - It's totally possible to initialize a `struct` with partial values.
+
+  ```go
+  type Custom struct {
+    field1 string
+    field2 int
+    field3 bool
+  }
+
+  example := Custom{field1: "test"} // the other struct fields are initialized using their respective zero-value
+  // update other properties of the struct via the `dot` operator
+  example.field2 = 10
+  example.field3 = true
+
+  // Go by Example states idiomatic inits of structs are as follows:
+  type yourStruct struct {
+    prop string
+    field int
+    etc etc
+  }
+
+  func createyourStruct(param type) *yourStruct {
+    creation := yourStruct{prop: param}
+    return &creation
+  }
+
+  // Return type is a pointer to the definition of the struct, return statement returns the created struct's address in memory
+  ```
+
+- Methods, act on structs and either:
+  - return using data from struct with changing the underlying instance
+    - or
+  - mutate the struct, and return
+
+**Thoughts:** tomorrow is Saturday, and I will do most of the study / exploration early in the day; today I came back, looked at structs and realised I had better re-assess them before moving onto methods and interfaces. Fortunately, I'm well setup for methods, as the idiomatic way to init them is via a constructor _method_!
+
+**But bottom line is: running through several topics at the end of a work day leaves memory gaps, and therefore a need to reiterate topics.**
+
+_Hasten slowly_, as the motto goes :)

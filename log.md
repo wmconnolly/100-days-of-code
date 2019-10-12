@@ -231,3 +231,33 @@ In any event, closures in Go are cool.
 **But bottom line is: running through several topics at the end of a work day leaves memory gaps, and therefore a need to reiterate topics.**
 
 _Hasten slowly_, as the motto goes :)
+
+---
+
+## Day 10, October 12, 2019
+
+**Today's Progress:**
+
+- To write `methods` ask yourself:
+
+  - Make calculation w/ existing `struct` data, or
+  - Change the underlying data of the `struct` you make a method call from?
+
+  ```go
+  func (varName structName) actualFuncName(ifParams type) returnType {
+    // are you changing the struct's underlying values? You need to `*` point to the struct in the function signature's header if so.
+  }
+  ```
+
+- Interfaces
+
+  - An `interface` is a data type to store a set of `method` signatures
+    - It's about structs similiar in nature, sharing common methods... i.e. not all fish are the same, but all fish swim
+  - If a `struct` is a named collection of primitive data types, an `interface` is a named collection of methods (which are capable of acting on structs similar in nature)
+
+- `goroutines`
+  - A _lightweight_ thread of execution, a thread is a piece of computation within a process, multiple can be run at the same time; said to be _concurrent_. As a hobbyist programmer, I'm sure my mental model, and technical understanding of concurrent computation will mature. As it does, I'm reminded of people who can spin many plates...
+    - [Spinning plates](https://giphy.com/gifs/lVzwf1CLZt9As/html5)...
+      where the stick person is the process, dowels are the threads, and plates equal the code to compute
+
+**Thoughts:** While I belive I understand the role of interfaces, I'm not sure I entirely appreciate their use. If the methods generalised by an `interface` need to be declared for each `struct` individually... why not just call the `method` off the `struct`? This though is compounded by an idiomatic approach seen in _single method interfaces_... My mind needs to grow and evolve with this one!

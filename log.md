@@ -261,3 +261,49 @@ _Hasten slowly_, as the motto goes :)
       where the stick person is the process, dowels are the threads, and plates equal the code to compute
 
 **Thoughts:** While I belive I understand the role of interfaces, I'm not sure I entirely appreciate their use. If the methods generalised by an `interface` need to be declared for each `struct` individually... why not just call the `method` off the `struct`? This though is compounded by an idiomatic approach seen in _single method interfaces_... My mind needs to grow and evolve with this one!
+
+---
+
+## Day 11, October 13, 2019
+
+**Today's Progress:** Relatively slow day, not _much_ that's new covered. But reproduced the execution chops of a goroutine by achieving a kind of recursion-in-a-closure like function; which I'll walk through now!
+
+```go
+package main
+import (
+  "fmt"
+  "time"
+)
+
+func increment(i *int) int {
+  n := *i + 1
+  *i := n
+  return increment(i)
+}
+
+func main() {
+  count := 0
+  go increment(&count)
+  time.Sleep(time.Second)
+  fmt.Print(count)
+}
+```
+
+So while this short `main` launches a go routine, I believe it's actually, non-chalantly, about pointers / pass-by-reference deep down.
+
+For `count` to increment on each recursive call of `increment`, it has to be the _same_ `count` used ... so `increment` needs to receive a variable pointing to memory, type `int`. We're incrementing by 1; the return type is also `int`.
+
+In the function body, `n` handles adding one to our current `count` value, then we assign the value of `n` back into `i` (`count`... by its memory _reference_).
+
+Our return value is the recursion, passing `i` without an asterisk. In the function body, we're referring to `*i` because we need to deal with the `int` value for `i` at the time. In the return, we're passing `i` back into our function _as a type identified as a pointer in the function signature_. I'm enjoying thinking about the "\*" as a dot, or a 'point'; denoting our code **points** to the **value** of the namespace we're referring to.
+
+When we launch the goroutine, we pass `increment` the `count` variable above, but prefixed with an ampersand... `&` denotes the _memory address_ of that variable, and our function is expecting an arugment which can _point_ to a value... `&count` allows the function to execute passing by reference.
+
+The output of the small scrip above, on my machine (a 2018 Macbook Air), gives `count` a final value of `8388579`
+
+...8,388,579 times, `count` was incremented by 1, _in one second_. This language is WILD
+
+**Thoughts:**
+Throughout the learning process, I think it's important to always take pause and ask the question _"how can I use what I've learned so far to solve a problem I currently have?"_.
+
+Learning concepts is one thing, converting them into concrete code is a whole different ball game.

@@ -307,3 +307,11 @@ The output of the small scrip above, on my machine (a 2018 Macbook Air), gives `
 Throughout the learning process, I think it's important to always take pause and ask the question _"how can I use what I've learned so far to solve a problem I currently have?"_.
 
 Learning concepts is one thing, converting them into concrete code is a whole different ball game.
+
+---
+
+## Day 12, October 14, 2019
+
+**Today's Progress:** Today is a bit of a mulligan; today was a national holiday in my country, though I worked, helped prepare the family meal for the holiday, then had a four-hour journey to help family with car trouble on their way back to home. So I came to today _late_ and **tired**. I have hopped onto "P4L", a new online course in Computational Thinking / Programming offered by Carnegie Mellon. Today's lecture is about the Ancient Greeks, and the origin of computational thinking. I joined 100+ minutes after its start. I will catch up tomorrow. This is all the brain power I have for today :)
+
+**Thoughts:** The prepared make easy work of foreseen challenges, the stalwart makes challenges unforeseen seem planned. The hardest parts of the challenge is to stick with it when you've got to totally improvise in your day. Despite a lackluster day of programming / expirementing, I hope this serves as a small example of being stalwart in my approach to 100 Days Of Code

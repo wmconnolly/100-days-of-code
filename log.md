@@ -315,3 +315,11 @@ Learning concepts is one thing, converting them into concrete code is a whole di
 **Today's Progress:** Today is a bit of a mulligan; today was a national holiday in my country, though I worked, helped prepare the family meal for the holiday, then had a four-hour journey to help family with car trouble on their way back to home. So I came to today _late_ and **tired**. I have hopped onto "P4L", a new online course in Computational Thinking / Programming offered by Carnegie Mellon. Today's lecture is about the Ancient Greeks, and the origin of computational thinking. I joined 100+ minutes after its start. I will catch up tomorrow. This is all the brain power I have for today :)
 
 **Thoughts:** The prepared make easy work of foreseen challenges, the stalwart makes challenges unforeseen seem planned. The hardest parts of the challenge is to stick with it when you've got to totally improvise in your day. Despite a lackluster day of programming / expirementing, I hope this serves as a small example of being stalwart in my approach to 100 Days Of Code
+
+---
+
+## Day 13, October 15, 2019
+
+**Today's Progress:** Caught up on the first lecture of P4L, quite glad I did; the course approach is interesting. The language of instruction _will be Go_ but there's an early emphasis on thinking computationally a language agnostic way. There's realy value to that, doing so leads you to a deeper truth of what programming **is**, a language always just being a specific implementation of that. Pseudocode is a universally interpreted language, compiled by the programmer ;). Pseudocode is an opportunity to excercise 'deep work' on the problem at hand.
+
+**Thoughts:** Go is an awesome, modern language I am so excited to pickup; but reasoning and crafting logic is timeless.

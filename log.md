@@ -323,3 +323,28 @@ Learning concepts is one thing, converting them into concrete code is a whole di
 **Today's Progress:** Caught up on the first lecture of P4L, quite glad I did; the course approach is interesting. The language of instruction _will be Go_ but there's an early emphasis on thinking computationally a language agnostic way. There's realy value to that, doing so leads you to a deeper truth of what programming **is**, a language always just being a specific implementation of that. Pseudocode is a universally interpreted language, compiled by the programmer ;). Pseudocode is an opportunity to excercise 'deep work' on the problem at hand.
 
 **Thoughts:** Go is an awesome, modern language I am so excited to pickup; but reasoning and crafting logic is timeless.
+
+---
+
+## Day 14, October 16, 2019
+
+**Today's Progress:** Watched a P4L-related video on debugging. A few debugging items to internalise:
+
+- Read the error in-full
+  - what context does it add?
+- Frame the problem
+  - where's the edge case?
+- Assess code bottom-up
+- Take breaks every 20 minutes
+  - do not sacrifice sleep!
+
+`chan` - explored channels to see how they fit with goroutines.
+
+- `chan` is a typed data structure, I'm thinking about them as _slices dedicated for concurrency_
+  - `yourChan := make(chan string)`
+- data follows the `<-` flow; values moving from right into the left
+  - `yourChan <- "Some text here"`
+  - `someValue <- yourChan`
+    - plucking out a value held in a channel
+
+**Thoughts:** being able to iterate through a `chan` with `range` is still unclear to me. I will be coming back to this tomorrow, I feel I've got an intermediary step wrong as I seem to produce a "deadlock!" error.

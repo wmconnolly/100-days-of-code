@@ -348,3 +348,65 @@ Learning concepts is one thing, converting them into concrete code is a whole di
     - plucking out a value held in a channel
 
 **Thoughts:** being able to iterate through a `chan` with `range` is still unclear to me. I will be coming back to this tomorrow, I feel I've got an intermediary step wrong as I seem to produce a "deadlock!" error.
+
+---
+
+## Day 15, October 17, 2019
+
+**Today's Progress:** Now I better understand why yesterday's ranging over a channel produced this _goroutines asleep, deadlock!_ error. Making a `chan` "opens" the channel for communication; recieving data from concurrent functions. A channel is open until explicityly **closed**. So, the `range` operator over a `chan` which has yet to close is an infinite loop... hence the error telling me _"goroutines are asleep"_, ie no functions are running, therefore the program has reached a _"deadlock!"_. Functioning `main.go` example below:
+
+```go
+package main
+
+import "fmt"
+
+func addtochan(i int, c chan int) {
+    for i := i; i <= 10; i++ {
+        c <- i
+    }
+    close(c) // channel needs to be closed!
+}
+
+func main() {
+    testChan := make(chan int)
+    go addtochan(0, testChan)
+    for num := range testChan {
+        fmt.Printf("%v ", num)
+    }
+}
+// output: 0 1 2 3 4 5 6 7 8 9 10
+```
+
+**Thoughts:**
+
+---
+
+## Day 16, October 18, 2019
+
+**Today's Progress:** Today's progress was made a few steps back from Go's syntax / language features, or dynamics; more about underlying mathematics in programming (via certain algorithms specifically). This is a result of taking part in Carnegie Mellon's new, freely offered "Programming For Lovers" course (featuring Go). The nature of today's progress is _actually exactly why I decided to make this part of my 100 Days challenge_. So, specifics; most of my time was spent re-visiting permutations and combinations.
+
+In short: for example, there are 5 items available for selection say programming languages to learn; Python, Javascript, Ruby, PHP, Go. Say you've decided to learn _two_ of those languages.
+
+The **combinations** of those two languages are unique picks consiting of two languages. ie:
+
+    - Python
+    - Go
+
+The **permutations** of those two languages considers _in what order you'll learn those languages_ ie:
+
+1. Python
+2. Go
+
+**or**
+
+1. Go
+2. Python
+
+_etc..._
+
+Combinations == unique _groups_
+Permutations == unique _orders_
+
+- of choice `n`
+
+**Thoughts:** Tomorrow I will detail the math, and implement in `Go`

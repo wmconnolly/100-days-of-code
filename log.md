@@ -410,3 +410,46 @@ Permutations == unique _orders_
 - of choice `n`
 
 **Thoughts:** Tomorrow I will detail the math, and implement in `Go`
+
+---
+
+## Day 17, October 19, 2019
+
+**Today's Progress:** Wrote Permutations and Combinations in Go, which is working up to limits `20` for Combination option size, `20` and `19` for Permutation option and selection size. Numbers larger than these overflow, I've yet to figure out how to perform the calculation without involving the `math/big` package...
+
+```go
+package main
+
+import "fmt"
+
+func Fact(n uint64) uint64 {
+    curr := n
+    for i := n; i > 1; i-- {
+        curr = curr * (i - 1)
+    }
+    return curr
+}
+
+func Perm(n, k uint64) uint64 {
+    nom := Fact(n)
+    den := Fact((n - k))
+    res := nom / den
+    fmt.Print(res)
+
+func Comb(n, k uint64) uint64 {
+    nom := Fact(n)
+
+    den := Fact(k) * Fact(n-k)
+    res := nom / den
+    fmt.Print(res)
+    return res
+}
+
+func main() {
+    Perm(20, 19)
+}
+
+// outputs 2432902008176640000 (!!)
+```
+
+**Thoughts:** While this _is_ driving me crazy, and I want to figure this out, I'm asking myself whether this is a problem **I will** encounter in my real-world programming; in the interest of time, I will move on for now :)

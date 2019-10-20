@@ -453,3 +453,11 @@ func main() {
 ```
 
 **Thoughts:** While this _is_ driving me crazy, and I want to figure this out, I'm asking myself whether this is a problem **I will** encounter in my real-world programming; in the interest of time, I will move on for now :)
+
+---
+
+## Day 18, October 20, 2019
+
+**Today's Progress:** Reviewed some String formatting materials, and the `time` package for timing program execution.
+
+**Thoughts:** Starting to look for ways I can solve some of my own problems using Go; I feel that'll be the next step in truly learning the language.

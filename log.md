@@ -471,4 +471,6 @@ func main() {
 **Thoughts:** A quick re-visit / explanation on the `*` and `&` syntax:
 
 - `&` represents the memory address of a variable
-  - kinda like saying, "oh `myVal` is on Heap & 0xc00009a000"
+  - kinda like saying, _"oh `myVal` is on Heap & 0xc00009a000"_
+- `*` is an asteriks, a dot; a _point_
+  - it denotes **pointing** to an actual data type _value_

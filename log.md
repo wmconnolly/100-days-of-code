@@ -461,3 +461,14 @@ func main() {
 **Today's Progress:** Reviewed some String formatting materials, and the `time` package for timing program execution.
 
 **Thoughts:** Starting to look for ways I can solve some of my own problems using Go; I feel that'll be the next step in truly learning the language.
+
+---
+
+## Day 19, October 21, 2019
+
+**Today's Progress:** Go in Action - with more topics covered in Go by Example, and P4L; I continued to read further into chapter 3. Rather than execute the book's code examples readily available via GitHub, I decided to write through it, and reproduce functionality according to `func` names. Great exercise for sure!
+
+**Thoughts:** A quick re-visit / explanation on the `*` and `&` syntax:
+
+- `&` represents the memory address of a variable
+  - kinda like saying, "oh `myVal` is on Heap & 0xc00009a000"

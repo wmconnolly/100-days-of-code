@@ -474,3 +474,17 @@ func main() {
   - kinda like saying, _"oh `myVal` is on Heap & 0xc00009a000"_
 - `*` is an asteriks, a dot; a _point_
   - it denotes **pointing** to an actual data type _value_
+
+---
+
+## Day 20, October 22, 2019
+
+**Today's Progress:** Since starting my journey with Go, I've been printing to std out exclusively with the `fmt` functions. Today, I've realised there's a `print()` and `println()` baked right in... This is lots welcome - perfect for my stage of poking around / experimenting with the language. Saving a few keystrokes on something oft typed _is a delight_.
+
+Chipped away at a little code challenge, experience the following:
+
+- if you `range` through a `string`, the iterated value from the string is an `int` type, not a `string`.
+  - Given `"abc"` - the value index `2` != `"c"`, but rather `99` - the integer value of a `string` equals that of a `rune`
+- `fmt.Sprintf` returns (not actually prints) a `string` value perfect for splicing data types into a string
+
+  **Thoughts:** While it was a slow process, it's a great exercise to solve problems like this, and concretely implement the readings / learnings from all other sources

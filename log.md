@@ -488,3 +488,20 @@ Chipped away at a little code challenge, experience the following:
 - `fmt.Sprintf` returns (not actually prints) a `string` value perfect for splicing data types into a string
 
   **Thoughts:** While it was a slow process, it's a great exercise to solve problems like this, and concretely implement the readings / learnings from all other sources
+
+---
+
+## Day 21, October 23, 2019
+
+**Today's Progress:** Worked through four more code katas today. Really enjoyed it, also caught up with Monday's P4L 1:50 lecture focusing on algorithms inherent to DNA pattern finding / counting.
+
+- an interesting idiom came from it; leveraging the `map` datatype and a boolean check whether the key (pattern built from subindexing a string) exists
+
+**Thoughts:** The map idiom reminds me of a quote of Rob Pike's I've seen recently:
+
+> Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming.
+>
+> [ Rob Pike's 5 Rules of Programming
+> ](https://users.ece.utexas.edu/~adnan/pike.html)
+
+Can't wait to embed this approach to programming, and hopefully increase my ability to leverage the programming language as it's built

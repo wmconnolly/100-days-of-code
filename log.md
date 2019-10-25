@@ -505,3 +505,10 @@ Chipped away at a little code challenge, experience the following:
 > ](https://users.ece.utexas.edu/~adnan/pike.html)
 
 Can't wait to embed this approach to programming, and hopefully increase my ability to leverage the programming language as it's built
+
+---
+
+## Day 22, October 24, 2019
+
+**Today's Progress:** Watched and participated in the first 65 minutes of today's P4L lecture. Covering some data types and algorithm approaches.
+**Thoughts:** Pseudocode is **king**

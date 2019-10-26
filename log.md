@@ -512,3 +512,24 @@ Can't wait to embed this approach to programming, and hopefully increase my abil
 
 **Today's Progress:** Watched and participated in the first 65 minutes of today's P4L lecture. Covering some data types and algorithm approaches.
 **Thoughts:** Pseudocode is **king**
+
+---
+
+## Day 23, October 25, 2019
+
+**Today's Progress:** Go in Action: finished chapter 3, began chapter 4 which covers the collection data types; `arrays`, `slices`, and `maps`. The book declares "arrays form the base data structure for both slices and maps", and "once you learn how these data structures work, programming in Go will become fun, fast, and flexible."
+
+Go is certainly already fast, and fun, I don't doubt it's flexible; but I will dedicate the weekend to covering chapter 4 and really having these basics sink in. The basics are always _most_ important.
+
+`go doc` automatically documents our code with these two conventions:
+
+- Comments directly ontop of the declaration
+- Use full sentences, first calling out the namespace of the item being _documented_
+  - ie
+
+    ```go
+    // MyFunc takes a ... returns x.
+    func MyFunc(x type)....
+    ```
+
+**Thoughts:** Practice 1 punch 10,000 times, rather than 10,000 punches once

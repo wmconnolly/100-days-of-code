@@ -525,6 +525,7 @@ Go is certainly already fast, and fun, I don't doubt it's flexible; but I will d
 
 - Comments directly ontop of the declaration
 - Use full sentences, first calling out the namespace of the item being _documented_
+
   - ie
 
     ```go
@@ -533,3 +534,17 @@ Go is certainly already fast, and fun, I don't doubt it's flexible; but I will d
     ```
 
 **Thoughts:** Practice 1 punch 10,000 times, rather than 10,000 punches once
+
+---
+
+## Day 24, October 26, 2019
+
+**Today's Progress:** Go in Action: read through arrays, and most of slices in Chapter 4.
+
+- If needing to pass a large array into a function, it's best to pass as a pointer, huge memory savings this way
+- Slices, perhaps unsurprisingly, are built ontop of arrays
+  - Sub-sliced slices share the same underlying array
+  - Slices have a length, but also a capacity for a total number of elements the slice can hold
+    - When a slice is appended to without existing capacity, `Go` re-assigns values in an underlying array, and doubles the capacity of the slice if capacity < 1000; 1.25x for slice capacities > 1000.
+
+**Thoughts:** Will finish Ch 4 tomorrow, but want to read a bit less and code a bit more!

@@ -548,3 +548,14 @@ Go is certainly already fast, and fun, I don't doubt it's flexible; but I will d
     - When a slice is appended to without existing capacity, `Go` re-assigns values in an underlying array, and doubles the capacity of the slice if capacity < 1000; 1.25x for slice capacities > 1000.
 
 **Thoughts:** Will finish Ch 4 tomorrow, but want to read a bit less and code a bit more!
+
+---
+
+## Day 25, October 27, 2019
+
+**Today's Progress:** Finished Chapter 4. The idiomatic way to create maps is a literal
+`someMap := map[keyType]valueType{...}`
+inside the curly brackets can have specific values, or left empty to create an empty map. Syntax example for a literal with specific values:
+`yourMap := map[int]string{1: "first key/value", 2: "a second key/value"}`
+
+**Thoughts:** The `slice` and `map` types are abstractions from an underlying `array` which holds the data. Because of this, it's cheap to pass slices or maps to functions (the data is _not_ copied for the func scope). Conversly, it's expensive to pass an `array` because the underlying data is copied; best practice is to pass a pointer variable to a function.

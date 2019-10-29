@@ -559,3 +559,10 @@ inside the curly brackets can have specific values, or left empty to create an e
 `yourMap := map[int]string{1: "first key/value", 2: "a second key/value"}`
 
 **Thoughts:** The `slice` and `map` types are abstractions from an underlying `array` which holds the data. Because of this, it's cheap to pass slices or maps to functions (the data is _not_ copied for the func scope). Conversly, it's expensive to pass an `array` because the underlying data is copied; best practice is to pass a pointer variable to a function.
+
+---
+
+## Day 26, October 28, 2019
+
+**Today's Progress:** P4L lectures, coding challenges, and review of Ch 4's highlights
+**Thoughts:** Do more challenges tomorrow!

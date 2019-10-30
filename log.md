@@ -566,3 +566,20 @@ inside the curly brackets can have specific values, or left empty to create an e
 
 **Today's Progress:** P4L lectures, coding challenges, and review of Ch 4's highlights
 **Thoughts:** Do more challenges tomorrow!
+
+---
+
+## Day 27, October 29, 2019
+
+**Today's Progress:** Go in Action - began Ch 5, Go's type system. The idiomatic way to initialise a variable to its zero-value is with the `var` keyword. Also, it's possible to create custom types which effectively aliases other types. Both items in one ie:
+
+```go
+type age int
+// ....
+var myage age
+myage = 28
+```
+
+Several coding challenges tonight, it has been the best tweak I've made to my 100 Days approach. More tomorrow!
+
+**Thoughts:** Peak productivity is an equillibrium between activity and efficiency; in the context of learning Go, I find this to mean I'm getting the most out of reading (best practices, available tools, etc) and then solving/typing some code katas.

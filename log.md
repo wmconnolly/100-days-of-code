@@ -583,3 +583,10 @@ myage = 28
 Several coding challenges tonight, it has been the best tweak I've made to my 100 Days approach. More tomorrow!
 
 **Thoughts:** Peak productivity is an equillibrium between activity and efficiency; in the context of learning Go, I find this to mean I'm getting the most out of reading (best practices, available tools, etc) and then solving/typing some code katas.
+
+---
+
+## Day 28, October 30, 2019
+
+**Today's Progress:** Spent little time reading today, mostly worked on katas (completed three).
+**Thoughts:** The shift made by working on katas is that it puts your mind into a _"how do I solve this problem"_ mode. It isolates a hurdle overwhich we can jump with code. I'm really starting to look for **business-value** items in my day-job I could write a `Go` script for... We shall see ^.^

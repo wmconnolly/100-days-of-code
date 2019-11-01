@@ -590,3 +590,13 @@ Several coding challenges tonight, it has been the best tweak I've made to my 10
 
 **Today's Progress:** Spent little time reading today, mostly worked on katas (completed three).
 **Thoughts:** The shift made by working on katas is that it puts your mind into a _"how do I solve this problem"_ mode. It isolates a hurdle overwhich we can jump with code. I'm really starting to look for **business-value** items in my day-job I could write a `Go` script for... We shall see ^.^
+
+---
+
+## Day 29, October 31, 2019
+
+**Today's Progress:** Go in Action: good reading on value / pointer receivers today. And learned Go will actually produce the proper receiver based on the specific kind of type which is calling the `method`.
+
+Solved katas again, actually planned the required math with pen and paper before typing any code! This is usually a difficult practice for me; I like to be fingers on-keyboard, even though that can drag-out effective problem solving.
+
+**Thoughts:** Still looking for something practical to implement Go in my day job...

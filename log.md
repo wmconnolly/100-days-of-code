@@ -600,3 +600,11 @@ Several coding challenges tonight, it has been the best tweak I've made to my 10
 Solved katas again, actually planned the required math with pen and paper before typing any code! This is usually a difficult practice for me; I like to be fingers on-keyboard, even though that can drag-out effective problem solving.
 
 **Thoughts:** Still looking for something practical to implement Go in my day job...
+
+---
+
+## Day 30, November 1, 2019
+
+**Today's Progress:** Primarily reading today. Go in Action: Chapter 5; _the nature of types_. `primitive` and `reference` types are generally passed to methods via `value` receivers _not_ via `pointer receivers`. Considering the buildingblocks of a `struct` can warrant `pointer` receivers... More to follow
+
+**Thoughts:**

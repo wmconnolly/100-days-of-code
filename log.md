@@ -608,3 +608,22 @@ Solved katas again, actually planned the required math with pen and paper before
 **Today's Progress:** Primarily reading today. Go in Action: Chapter 5; _the nature of types_. `primitive` and `reference` types are generally passed to methods via `value` receivers _not_ via `pointer receivers`. Considering the buildingblocks of a `struct` can warrant `pointer` receivers... More to follow
 
 **Thoughts:**
+
+---
+
+## Day 31, November 2, 2019
+
+**Today's Progress:** Go in Action, Ch 5, through to Method Sets.
+Choosing a receiver type depends on the complexity of the `struct` being passed in.
+
+- primitive type stucts => value receiever
+- nonprimitives => pointer reciever
+
+An `interface` is a type which declares behaviour... Like a way to generalise functionality. Interfaces are data structures with two fields:
+
+1. a pointer to an `iTable` (contains type info of the stored value)
+2. a pointer to the actual stored value
+
+Spent time experimenting with the `net` and `net/http` packages.
+
+**Thoughts:** While generally familiar with HTTP, and knowing that Go's implementation is highly effective, it still felt like a lot of code to think through. I suppose this is inherent to the learning process; a cycle between confusion and comprehension. Will come back to this tomorrow.

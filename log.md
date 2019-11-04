@@ -627,3 +627,11 @@ An `interface` is a type which declares behaviour... Like a way to generalise fu
 Spent time experimenting with the `net` and `net/http` packages.
 
 **Thoughts:** While generally familiar with HTTP, and knowing that Go's implementation is highly effective, it still felt like a lot of code to think through. I suppose this is inherent to the learning process; a cycle between confusion and comprehension. Will come back to this tomorrow.
+
+---
+
+## Day 32, November 3, 2019
+
+**Today's Progress:** Lots of reading on `net/http`. Had a few examples running, though a full understanding of how and _why_ it works eludes me. Code kata, which was essentially about leveraging the `strings` package.
+
+**Thoughts:** The 100 Days challenge is fantastic, though a true and genuine; professional-grade understanding will take _much_ longer. Can build this with the habits built by doing the 100 Days challenge

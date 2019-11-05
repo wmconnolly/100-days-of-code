@@ -635,3 +635,32 @@ Spent time experimenting with the `net` and `net/http` packages.
 **Today's Progress:** Lots of reading on `net/http`. Had a few examples running, though a full understanding of how and _why_ it works eludes me. Code kata, which was essentially about leveraging the `strings` package.
 
 **Thoughts:** The 100 Days challenge is fantastic, though a true and genuine; professional-grade understanding will take _much_ longer. Can build this with the habits built by doing the 100 Days challenge
+
+---
+
+## Day 33, November 4, 2019
+
+**Today's Progress:** Just katas today. After much reading over the weekend, I thought it best to only work on concrete challenges today. Here's how I solved finding the largest sum of a sub-set in an `int` slice:
+
+```go
+func MaximumSubarraySum(numbers []int) int {
+    var result int
+    for i := range numbers {
+        for j := range numbers[i:] {
+            var check int
+            for _, num := range numbers[j:] {
+                check += num
+                if check > result {
+                    result = check
+                }
+            }
+
+        }
+    }
+    return result
+}
+```
+
+The challenge exists in conceeding that negative, or low-value ints may be between high-value ints of sub-slice which makeup for the lower values. Always checking the sum, and re-assignig to `result` if greater than that of the _last_ check captures the highest sum regardless if `check` begin to diminish; seeing as it _will not_ be less than `result`.
+
+**Thoughts:** Had fun today!

@@ -664,3 +664,10 @@ func MaximumSubarraySum(numbers []int) int {
 The challenge exists in conceeding that negative, or low-value ints may be between high-value ints of sub-slice which makeup for the lower values. Always checking the sum, and re-assignig to `result` if greater than that of the _last_ check captures the highest sum regardless if `check` begin to diminish; seeing as it _will not_ be less than `result`.
 
 **Thoughts:** Had fun today!
+
+---
+
+## Day 34, November 5, 2019
+
+**Today's Progress:** Code katas only today, currently stuck on a 'Diophante' equation. I've got a working solution, though it needs to be refactored so it executes in a reasonable amount of time.
+**Thoughts:** Will continue reading tomorrow

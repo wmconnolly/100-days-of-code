@@ -565,6 +565,7 @@ inside the curly brackets can have specific values, or left empty to create an e
 ## Day 26, October 28, 2019
 
 **Today's Progress:** P4L lectures, coding challenges, and review of Ch 4's highlights
+
 **Thoughts:** Do more challenges tomorrow!
 
 ---
@@ -589,6 +590,7 @@ Several coding challenges tonight, it has been the best tweak I've made to my 10
 ## Day 28, October 30, 2019
 
 **Today's Progress:** Spent little time reading today, mostly worked on katas (completed three).
+
 **Thoughts:** The shift made by working on katas is that it puts your mind into a _"how do I solve this problem"_ mode. It isolates a hurdle overwhich we can jump with code. I'm really starting to look for **business-value** items in my day-job I could write a `Go` script for... We shall see ^.^
 
 ---
@@ -670,4 +672,11 @@ The challenge exists in conceeding that negative, or low-value ints may be betwe
 ## Day 34, November 5, 2019
 
 **Today's Progress:** Code katas only today, currently stuck on a 'Diophante' equation. I've got a working solution, though it needs to be refactored so it executes in a reasonable amount of time.
+
 **Thoughts:** Will continue reading tomorrow
+
+---
+## Day 35, November 6, 2019
+**Today's Progress:** Read Ch. 5, looking at Interfaces again, also watched watched a tech talk on idiomatic Go practices. Posting this progress the day after, because I fell asleep reading
+
+**Thoughts:**

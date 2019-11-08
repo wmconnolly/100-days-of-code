@@ -680,3 +680,9 @@ The challenge exists in conceeding that negative, or low-value ints may be betwe
 **Today's Progress:** Read Ch. 5, looking at Interfaces again, also watched watched a tech talk on idiomatic Go practices. Posting this progress the day after, because I fell asleep reading
 
 **Thoughts:**
+
+---
+## Day 36, November 7, 2019
+**Today's Progress:** Continued Ch. 5, Diophantine kata; still stuck...
+
+**Thoughts:**

@@ -686,3 +686,29 @@ The challenge exists in conceeding that negative, or low-value ints may be betwe
 **Today's Progress:** Continued Ch. 5, Diophantine kata; still stuck...
 
 **Thoughts:**
+
+---
+## Day 37, November 8, 2019
+**Today's Progress:** Katas only today. Made progress with Diophantine, though I still have yet to produce a solution which _doesn't_ time out.
+
+```go
+import "math"
+
+func Solequa(n int) [][]int {
+    calc := [][]int{}
+    if n < 0 {
+        return calc
+    }
+    sqrn := int(math.Sqrt(float64(n)))
+    for x := n; x > sqrn; x-- {
+        y := int(math.Sqrt(float64((x*x - n) / 4)))
+        if ((x - 2*y) * (x + 2*y)) == n {
+            calc = append(calc, []int{x, y})
+        }
+    }
+    return calc
+}
+```
+At least now I'm only using one loop, but my math is weak; so I'm still trying to pickout the blindspot here. I've saved this kata for now, and moved on to others as so I don't dwell too long on this at one time.
+
+**Thoughts:** 

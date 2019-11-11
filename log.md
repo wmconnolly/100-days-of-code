@@ -712,3 +712,15 @@ func Solequa(n int) [][]int {
 At least now I'm only using one loop, but my math is weak; so I'm still trying to pickout the blindspot here. I've saved this kata for now, and moved on to others as so I don't dwell too long on this at one time.
 
 **Thoughts:** 
+
+---
+## Day 38, November 9, 2019
+**Today's Progress:** Katas only today.
+
+**Thoughts:**
+
+---
+## Day 39, November 10, 2019
+**Today's Progress:** Katas only today, too.
+
+**Thoughts:** Katas have been great, though it's certainly time to pick back up the books, etc. and continue to expand on Go as a language.

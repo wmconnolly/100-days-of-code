@@ -724,3 +724,9 @@ At least now I'm only using one loop, but my math is weak; so I'm still trying t
 **Today's Progress:** Katas only today, too.
 
 **Thoughts:** Katas have been great, though it's certainly time to pick back up the books, etc. and continue to expand on Go as a language.
+
+---
+## Day 40, November 11, 2019
+**Today's Progress:** Go in Action: embedded types, and some katas
+
+**Thoughts:**

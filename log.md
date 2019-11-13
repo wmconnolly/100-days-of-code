@@ -730,3 +730,9 @@ At least now I'm only using one loop, but my math is weak; so I'm still trying t
 **Today's Progress:** Go in Action: embedded types, and some katas
 
 **Thoughts:**
+
+---
+## Day 41, November 12, 2019
+**Today's Progress:** Katas, light reading
+
+**Thoughts:** 

@@ -736,3 +736,9 @@ At least now I'm only using one loop, but my math is weak; so I'm still trying t
 **Today's Progress:** Katas, light reading
 
 **Thoughts:** 
+
+---
+## Day 42, November 13, 2019
+**Today's Progress:** Began work on developing a script to update a clou-hosted spreadsheet based on updates I receive in a separate Excel. Have my Go http client authorized, and accepting the JSON payload - I have the option of receiving it as a CSV; debating which encoding I should opt for. Will explore this tomorrow!
+
+**Thoughts:** Excited to find a way of using Go in my day job

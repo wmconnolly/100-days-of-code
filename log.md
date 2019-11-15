@@ -742,3 +742,11 @@ At least now I'm only using one loop, but my math is weak; so I'm still trying t
 **Today's Progress:** Began work on developing a script to update a clou-hosted spreadsheet based on updates I receive in a separate Excel. Have my Go http client authorized, and accepting the JSON payload - I have the option of receiving it as a CSV; debating which encoding I should opt for. Will explore this tomorrow!
 
 **Thoughts:** Excited to find a way of using Go in my day job
+
+---
+## Day 43, November 14, 2019
+**Today's Progress:** Decided to use JSON for this project, as making a PUT request with the updates may force the loss of metadta which I use in other reporting. 
+
+The Go's way of handling JSON data is interesting; you basically replicate the JSON key/values into your own custom types, and 'decode' into an instance of the type. Still playing around with getting this right, will include snippets once I've got a solid grasp of my types.
+
+**Thoughts:** Feeling the tax of Go with this learning curve, as compared to doing the same thing in Python. Having said that, Go still feels quite high-level considering it can be fittingly used for lower-level purposes.

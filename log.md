@@ -715,38 +715,63 @@ At least now I'm only using one loop, but my math is weak; so I'm still trying t
 
 ---
 ## Day 38, November 9, 2019
+j
 **Today's Progress:** Katas only today.
 
 **Thoughts:**
 
 ---
 ## Day 39, November 10, 2019
+
 **Today's Progress:** Katas only today, too.
 
 **Thoughts:** Katas have been great, though it's certainly time to pick back up the books, etc. and continue to expand on Go as a language.
 
 ---
 ## Day 40, November 11, 2019
+
 **Today's Progress:** Go in Action: embedded types, and some katas
 
 **Thoughts:**
 
 ---
 ## Day 41, November 12, 2019
+
 **Today's Progress:** Katas, light reading
 
 **Thoughts:** 
 
 ---
 ## Day 42, November 13, 2019
+
 **Today's Progress:** Began work on developing a script to update a clou-hosted spreadsheet based on updates I receive in a separate Excel. Have my Go http client authorized, and accepting the JSON payload - I have the option of receiving it as a CSV; debating which encoding I should opt for. Will explore this tomorrow!
 
 **Thoughts:** Excited to find a way of using Go in my day job
 
 ---
 ## Day 43, November 14, 2019
+
 **Today's Progress:** Decided to use JSON for this project, as making a PUT request with the updates may force the loss of metadta which I use in other reporting. 
 
 The Go's way of handling JSON data is interesting; you basically replicate the JSON key/values into your own custom types, and 'decode' into an instance of the type. Still playing around with getting this right, will include snippets once I've got a solid grasp of my types.
 
 **Thoughts:** Feeling the tax of Go with this learning curve, as compared to doing the same thing in Python. Having said that, Go still feels quite high-level considering it can be fittingly used for lower-level purposes.
+
+---
+## Day 44, November 15, 2019
+
+**Today's Progress:** Made progress in parsing the JSON data. Yesterday, I began to wrestle with how to reliably access data, from a list, re-using the same `key`, but with differing data types depended on the column. Unmarshalling into a strictly typed `struct` was intermittently successful as a result.
+
+The answer lies in two facets:
+  1. `[]interface{}` is the Go type for JSON arrays
+  2. `map[string]interface{}` is the Go type for JSON objects
+
+So the JSON from the API looks like:
+  - sheet object
+    - rows array of row objects
+      - cells array of cell objects
+        - key/values; ie `"displayValue": {bool || string || float64 || nil}`
+
+Now being able to store the array of cell objects in a slice of interfaces, I can convert each cell JSON obj to a Go map; and process accordingly.
+
+**Thoughts:** Still early days here, but great learning.

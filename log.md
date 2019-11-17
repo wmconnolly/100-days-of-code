@@ -775,3 +775,38 @@ So the JSON from the API looks like:
 Now being able to store the array of cell objects in a slice of interfaces, I can convert each cell JSON obj to a Go map; and process accordingly.
 
 **Thoughts:** Still early days here, but great learning.
+
+---
+## Day 45, November 16, 2019
+
+**Today's Progress:** With having the issue of dealing with varying types of a `cell.value` solved, I spent my time thinking about how I'll pair the process of reading-in the necessary changes, finding the existing, corresponding row/cells, and posting changes.
+
+The API is kind of silly, in that there's a `cell.columnId` and `.value / .displayValue` but _no `cell.columnName`_; to act on the right cell in Go's `map[string]interface{}` representation, I'll have to pluck out the corresponding column IDs into standalone variables and cross-check with the current cell's `.columnId`
+
+i.e.
+```go
+type payload struct {
+    Name    string
+    Id      int
+    Columns []cols
+    Rows    []rows
+}
+
+var contractcol int
+var statuscol int
+var datecol int
+for _, col := range ts.Columns {
+    switch col.Name {
+    case "contract number":
+        contractcol = col.Id
+    case "status":
+        statuscol = col.Id
+    case "date paid":
+        datecol = col.Id
+    }
+  }
+
+// if cell["columnId"] == contraclcol {do work}
+```
+
+**Thoughts:** Unless I'm missing something here, I the API seems a bit wonky? I wonder what the design choices were, and why.

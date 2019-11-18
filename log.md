@@ -810,3 +810,11 @@ for _, col := range ts.Columns {
 ```
 
 **Thoughts:** Unless I'm missing something here, I the API seems a bit wonky? I wonder what the design choices were, and why.
+
+
+---
+## Day 46, November 17, 2019
+
+**Today's Progress:** Reading in my CSV data of changes needed to be made, and wrote a small helper function to decompose each `record` into a struct. But because each cell needs a `type assertion` into its respective map, I only have one cell available to me at a time -- to act on the right rows of data, I need to cross reference multiple cell values against the given csv record. So, I could either do multiple `if` checks, then destructure the _next_ cell using the loop's index - or I could use a `bool` for each requirement, and only alter the targeted cells if all prove true. In this case, I'll ultimately be looping through the JSON array of `cell` objects twice (which doesn't feel _proper_). We'll see!
+
+**Thoughts:** Still curious over this APIs design choices ^.^

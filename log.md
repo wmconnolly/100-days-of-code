@@ -825,3 +825,14 @@ for _, col := range ts.Columns {
 **Today's Progress:** Relatively light reading today, heavy lifting at my job today; little mental energy left by the end. Small downside to remote work in the easy illusion of _always being at work_.
 
 **Thoughts:** `brainpower := interface{}`
+
+---
+## Day 48, November 19, 2019
+
+**Today's Progress:** Wrote an initial function to return `true` or `false` on whether a row of cells is _relevant_ to the current 'update' record read-in from my CSV.
+
+The challenge now for me to take on is to smooth over the representation of any given datapoint after it's been converted.
+
+E.g: a CSV record is read into a slice of strings, regardless of _what_ the data is meant to be. Contrast to the generalisation of numbers in a JSON object to be represented as `float64` in Go. Need to make sure I'm comparing apples to apples!
+
+**Thoughts:**

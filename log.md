@@ -836,3 +836,10 @@ The challenge now for me to take on is to smooth over the representation of any 
 E.g: a CSV record is read into a slice of strings, regardless of _what_ the data is meant to be. Contrast to the generalisation of numbers in a JSON object to be represented as `float64` in Go. Need to make sure I'm comparing apples to apples!
 
 **Thoughts:**
+
+---
+## Day 49, November 20, 2019
+
+**Today's Progress:** Matching CSV rows to corresponding JSON objects from the cloud-based spreadsheet. Each `cell` has a `"displayValue"` field, which is always a string. a CSV `record` is always a string. So the comparison checks works accurately and cleanly in my code. Currently working out the inner, core logic of the program; and will then need to properly `PUT` the JSON to the sheet. Then this little project is effectively finished!
+
+**Thoughts:**

@@ -843,3 +843,12 @@ E.g: a CSV record is read into a slice of strings, regardless of _what_ the data
 **Today's Progress:** Matching CSV rows to corresponding JSON objects from the cloud-based spreadsheet. Each `cell` has a `"displayValue"` field, which is always a string. a CSV `record` is always a string. So the comparison checks works accurately and cleanly in my code. Currently working out the inner, core logic of the program; and will then need to properly `PUT` the JSON to the sheet. Then this little project is effectively finished!
 
 **Thoughts:**
+
+---
+## Day 50, November 21, 2019
+
+**Today's Progress:** Changes from the CSV record are being made to the underlying JSON cell. Marshalling the Go representation, and handing off to the http client to `PUT` back into the cloud-spreadsheet. **Awesome**. It's working, after a few http 400 responses, I discovered a cell's values (which I do not need to check/change) aren't copying through to JSON - hard-coded data to check whether the PUT request works thereafter; it is!
+
+So tomorrow I'll investigate this further, and make sure I don't have to be hack-y with the program. Otherwise this is a good-to-go program, with a month's worth of changes data incoming.
+
+**Thoughts:**

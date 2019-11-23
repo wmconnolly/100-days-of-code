@@ -852,3 +852,10 @@ E.g: a CSV record is read into a slice of strings, regardless of _what_ the data
 So tomorrow I'll investigate this further, and make sure I don't have to be hack-y with the program. Otherwise this is a good-to-go program, with a month's worth of changes data incoming.
 
 **Thoughts:**
+
+---
+## Day 51, November 22, 2019
+
+**Today's Progress:** Reading today, some bits on the `os` package. 
+
+**Thoughts:**

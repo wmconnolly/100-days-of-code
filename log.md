@@ -859,3 +859,10 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 **Today's Progress:** Reading today, some bits on the `os` package. 
 
 **Thoughts:**
+
+---
+## Day 52, November 23, 2019
+
+**Today's Progress:** Began cleaning up my spreadsheet program, setting the filename dynamically by reading all files in the directory. Also watched some videos coming out of KubeCon19, did some industry reading, and setup VIM with code snippets - I think I'm ok now to _not_ keep typing `fmt.Printf(...)` char by char :). Or `if err != nil {...}`...
+
+**Thoughts:** Little things make the difference, probably should have invested the time to optomise VIM a bit sooner! 

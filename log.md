@@ -873,3 +873,10 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 **Today's Progress:** Started reading about `k3s` and serverless approaches, and I want to get into the Kubernetes realm; Docker and Kubernetes' being built in Go was a major factor in my deciding to learn the language - I see (from a distance) the impact both technologies are having in the enterprise applications / data center spaces.
 
 **Thoughts:** Why doesn't my Mac have `systemd`?
+
+---
+## Day 54, November 25, 2019
+
+**Today's Progress:** Finished (for now) refactoring my spreadsheet program. More time spent on k3s, learning how it's different than k8s; I feel silly for trying to install either directly on my Mac - Kubernetes is about orchestrating _Linux containers_ after all. OSS, Linux, _duhh_. 
+
+**Thoughts:** Raspberry Pi it is!

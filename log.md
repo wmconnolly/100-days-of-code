@@ -887,3 +887,10 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 **Today's Progress:** Started reading _"Kubernetes: Up and Running"_ via a PDF freely given away by Microsoft Azure. Generally lose patience reading PDFs; will likely buy a physical copy, but this is incredibly helpful to kick-start my `k8s` journey. Also spent time scoping out a new work-related project I can use Go for: parsing PDF documents to produce tabular data which is used for other tracking purposes.
 
 **Thoughts:**
+
+---
+## Day 56, November 27, 2019
+
+**Today's Progress:** Kubernetes reading and video watching today, ordered a RPi 4, so will soon be setting up my 'home-lab'. Learned / realised today Pods can mount fibre channel volumes.
+
+**Thoughts:** Wonder how often the containerisation and SAN worlds conjoin...

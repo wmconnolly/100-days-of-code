@@ -894,3 +894,10 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 **Today's Progress:** Kubernetes reading and video watching today, ordered a RPi 4, so will soon be setting up my 'home-lab'. Learned / realised today Pods can mount fibre channel volumes.
 
 **Thoughts:** Wonder how often the containerisation and SAN worlds conjoin...
+
+---
+## Day 57, November 28, 2019
+
+**Today's Progress:** Installed `kubectl` and `minikube` on my machine, hoping to explore Kubernetes hands-on as much as possible before my Raspberry Pi arrives next week. Having trouble with `minikube start` and my VirtualBox installation; using the embedded KataKoda on kubernetes.io
+
+**Thoughts:**

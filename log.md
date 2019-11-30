@@ -907,4 +907,4 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 
 **Today's Progress:** More _Kubernetes: Up and Running_ reading today; still reading through the high-level descriptions, and components. What I most have internalised is that Kubernetes implements an immutable 'snap shot' of an application + infrastructure. Immutability is achieved via containers / container images. Virtual Box isn't playing nice on my machine; I've scrapped it altogether for `multipass` - it just works! 
 
-**Thoughts:** There will be so much to learn.
+**Thoughts:** There will be so much to learn

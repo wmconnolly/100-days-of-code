@@ -901,3 +901,10 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 **Today's Progress:** Installed `kubectl` and `minikube` on my machine, hoping to explore Kubernetes hands-on as much as possible before my Raspberry Pi arrives next week. Having trouble with `minikube start` and my VirtualBox installation; using the embedded KataKoda on kubernetes.io
 
 **Thoughts:**
+
+---
+## Day 58, November 29, 2019
+
+**Today's Progress:** More _Kubernetes: Up and Running_ reading today; still reading through the high-level descriptions, and components. What I most have internalised is that Kubernetes implements an immutable 'snap shot' of an application + infrastructure. Immutability is achieved via containers / container images. Virtual Box isn't playing nice on my machine; I've scrapped it altogether for `multipass` - it just works! 
+
+**Thoughts:** There will be so much to learn.

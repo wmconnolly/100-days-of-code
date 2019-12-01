@@ -908,3 +908,10 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 **Today's Progress:** More _Kubernetes: Up and Running_ reading today; still reading through the high-level descriptions, and components. What I most have internalised is that Kubernetes implements an immutable 'snap shot' of an application + infrastructure. Immutability is achieved via containers / container images. Virtual Box isn't playing nice on my machine; I've scrapped it altogether for `multipass` - it just works! 
 
 **Thoughts:** There will be so much to learn
+
+---
+## Day 59, November 30, 2019
+
+**Today's Progress:** Successfully ran my first kubernetes cluster on my macbook today. Using k3s, and multipass to create linux VMs; so excited for my RPi to arrive so the home lab comes even more real.
+
+**Thoughts:**

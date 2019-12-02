@@ -915,3 +915,14 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 **Today's Progress:** Successfully ran my first kubernetes cluster on my macbook today. Using k3s, and multipass to create linux VMs; so excited for my RPi to arrive so the home lab comes even more real.
 
 **Thoughts:**
+
+---
+## Day 60, December 1, 2019
+
+**Today's Progress:** Spent the majority of the day getting my day-zero ducks in-a-row for setting up a k8s cluster once my RPi arrives. Three general steps: 
+   1. flash my OS on the SD card
+   2. fire-up the RPi, and prep it as the `master` node
+   3. provision a few VMs, and add to the cluster
+Also took advantage of the cyber Monday deals for the CNCF & Linux Foundation's partnership on the CKA training / exam. Yes!!
+
+**Thoughts:**

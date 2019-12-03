@@ -926,3 +926,10 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 Also took advantage of the cyber Monday deals for the CNCF & Linux Foundation's partnership on the CKA training / exam. Yes!!
 
 **Thoughts:**
+
+---
+## Day 61, December 2, 2019
+
+**Today's Progress:** Have my RPi 4 online; though with only one board I'm trying to create one or two VMs. `multipass` isn't playing nice with `qemu`. Looking into virtualisation for Ubuntu on Raspberry Pi.
+
+**Thoughts:**

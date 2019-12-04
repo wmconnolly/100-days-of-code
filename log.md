@@ -933,3 +933,10 @@ Also took advantage of the cyber Monday deals for the CNCF & Linux Foundation's 
 **Today's Progress:** Have my RPi 4 online; though with only one board I'm trying to create one or two VMs. `multipass` isn't playing nice with `qemu`. Looking into virtualisation for Ubuntu on Raspberry Pi.
 
 **Thoughts:**
+
+---
+## Day 62, December 3, 2019
+
+**Today's Progress:** After two days of solving unexpected, nested issues; I have my RPi running Ubuntu Server 19.10 running VMs via KVM, Qemu, and a Ubuntu iso installed by virt-installer. Now watch multipass releases a fix for `qemu` tomorrow ^.^
+
+**Thoughts:**

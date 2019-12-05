@@ -940,3 +940,12 @@ Also took advantage of the cyber Monday deals for the CNCF & Linux Foundation's 
 **Today's Progress:** After two days of solving unexpected, nested issues; I have my RPi running Ubuntu Server 19.10 running VMs via KVM, Qemu, and a Ubuntu iso installed by virt-installer. Now watch multipass releases a fix for `qemu` tomorrow ^.^
 
 **Thoughts:**
+
+---
+## Day 63, December 4, 2019
+
+**Today's Progress:** Installed a fan for the Raspberry Pi, and put the unit in a case. The case isn't great - the board doesn't line up perfectly with the port holes; the SD card is a bit tight. It's booting, and running fine though. 
+
+Finished reading Chatper 2 material for CKA training
+
+**Thoughts:**

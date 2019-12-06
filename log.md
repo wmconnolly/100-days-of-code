@@ -949,3 +949,16 @@ Also took advantage of the cyber Monday deals for the CNCF & Linux Foundation's 
 Finished reading Chatper 2 material for CKA training
 
 **Thoughts:**
+
+---
+## Day 64, December 5, 2019
+
+**Today's Progress:** Have `k3s` installed on my master and VMs - though the server is "refusing to connect". I think I've forgotten to disable `swap`. Will trouble shoot the details tomorrow.
+
+Hot tip - copy files from a host to a VM with the `scp` command: e.g.
+
+```bash
+scp localfile.xyz user@<VMs IP addr>:/destin/ation/path
+```
+
+**Thoughts:** I haven't spent this much time  at the CLI since installing Arch on a Dell XPS 13 with a Broadcom wireless card ^.^

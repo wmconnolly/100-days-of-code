@@ -676,19 +676,25 @@ The challenge exists in conceeding that negative, or low-value ints may be betwe
 **Thoughts:** Will continue reading tomorrow
 
 ---
+
 ## Day 35, November 6, 2019
+
 **Today's Progress:** Read Ch. 5, looking at Interfaces again, also watched watched a tech talk on idiomatic Go practices. Posting this progress the day after, because I fell asleep reading
 
 **Thoughts:**
 
 ---
+
 ## Day 36, November 7, 2019
+
 **Today's Progress:** Continued Ch. 5, Diophantine kata; still stuck...
 
 **Thoughts:**
 
 ---
+
 ## Day 37, November 8, 2019
+
 **Today's Progress:** Katas only today. Made progress with Diophantine, though I still have yet to produce a solution which _doesn't_ time out.
 
 ```go
@@ -709,18 +715,22 @@ func Solequa(n int) [][]int {
     return calc
 }
 ```
+
 At least now I'm only using one loop, but my math is weak; so I'm still trying to pickout the blindspot here. I've saved this kata for now, and moved on to others as so I don't dwell too long on this at one time.
 
-**Thoughts:** 
+**Thoughts:**
 
 ---
+
 ## Day 38, November 9, 2019
+
 j
 **Today's Progress:** Katas only today.
 
 **Thoughts:**
 
 ---
+
 ## Day 39, November 10, 2019
 
 **Today's Progress:** Katas only today, too.
@@ -728,6 +738,7 @@ j
 **Thoughts:** Katas have been great, though it's certainly time to pick back up the books, etc. and continue to expand on Go as a language.
 
 ---
+
 ## Day 40, November 11, 2019
 
 **Today's Progress:** Go in Action: embedded types, and some katas
@@ -735,13 +746,15 @@ j
 **Thoughts:**
 
 ---
+
 ## Day 41, November 12, 2019
 
 **Today's Progress:** Katas, light reading
 
-**Thoughts:** 
+**Thoughts:**
 
 ---
+
 ## Day 42, November 13, 2019
 
 **Today's Progress:** Began work on developing a script to update a clou-hosted spreadsheet based on updates I receive in a separate Excel. Have my Go http client authorized, and accepting the JSON payload - I have the option of receiving it as a CSV; debating which encoding I should opt for. Will explore this tomorrow!
@@ -749,34 +762,39 @@ j
 **Thoughts:** Excited to find a way of using Go in my day job
 
 ---
+
 ## Day 43, November 14, 2019
 
-**Today's Progress:** Decided to use JSON for this project, as making a PUT request with the updates may force the loss of metadta which I use in other reporting. 
+**Today's Progress:** Decided to use JSON for this project, as making a PUT request with the updates may force the loss of metadta which I use in other reporting.
 
 The Go's way of handling JSON data is interesting; you basically replicate the JSON key/values into your own custom types, and 'decode' into an instance of the type. Still playing around with getting this right, will include snippets once I've got a solid grasp of my types.
 
 **Thoughts:** Feeling the tax of Go with this learning curve, as compared to doing the same thing in Python. Having said that, Go still feels quite high-level considering it can be fittingly used for lower-level purposes.
 
 ---
+
 ## Day 44, November 15, 2019
 
 **Today's Progress:** Made progress in parsing the JSON data. Yesterday, I began to wrestle with how to reliably access data, from a list, re-using the same `key`, but with differing data types depended on the column. Unmarshalling into a strictly typed `struct` was intermittently successful as a result.
 
 The answer lies in two facets:
-  1. `[]interface{}` is the Go type for JSON arrays
-  2. `map[string]interface{}` is the Go type for JSON objects
+
+1. `[]interface{}` is the Go type for JSON arrays
+2. `map[string]interface{}` is the Go type for JSON objects
 
 So the JSON from the API looks like:
-  - sheet object
-    - rows array of row objects
-      - cells array of cell objects
-        - key/values; ie `"displayValue": {bool || string || float64 || nil}`
+
+- sheet object
+  - rows array of row objects
+    - cells array of cell objects
+      - key/values; ie `"displayValue": {bool || string || float64 || nil}`
 
 Now being able to store the array of cell objects in a slice of interfaces, I can convert each cell JSON obj to a Go map; and process accordingly.
 
 **Thoughts:** Still early days here, but great learning.
 
 ---
+
 ## Day 45, November 16, 2019
 
 **Today's Progress:** With having the issue of dealing with varying types of a `cell.value` solved, I spent my time thinking about how I'll pair the process of reading-in the necessary changes, finding the existing, corresponding row/cells, and posting changes.
@@ -784,6 +802,7 @@ Now being able to store the array of cell objects in a slice of interfaces, I ca
 The API is kind of silly, in that there's a `cell.columnId` and `.value / .displayValue` but _no `cell.columnName`_; to act on the right cell in Go's `map[string]interface{}` representation, I'll have to pluck out the corresponding column IDs into standalone variables and cross-check with the current cell's `.columnId`
 
 i.e.
+
 ```go
 type payload struct {
     Name    string
@@ -811,8 +830,8 @@ for _, col := range ts.Columns {
 
 **Thoughts:** Unless I'm missing something here, I the API seems a bit wonky? I wonder what the design choices were, and why.
 
-
 ---
+
 ## Day 46, November 17, 2019
 
 **Today's Progress:** Reading in my CSV data of changes needed to be made, and wrote a small helper function to decompose each `record` into a struct. But because each cell needs a `type assertion` into its respective map, I only have one cell available to me at a time -- to act on the right rows of data, I need to cross reference multiple cell values against the given csv record. So, I could either do multiple `if` checks, then destructure the _next_ cell using the loop's index - or I could use a `bool` for each requirement, and only alter the targeted cells if all prove true. In this case, I'll ultimately be looping through the JSON array of `cell` objects twice (which doesn't feel _proper_). We'll see!
@@ -820,6 +839,7 @@ for _, col := range ts.Columns {
 **Thoughts:** Still curious over this APIs design choices ^.^
 
 ---
+
 ## Day 47, November, 18
 
 **Today's Progress:** Relatively light reading today, heavy lifting at my job today; little mental energy left by the end. Small downside to remote work in the easy illusion of _always being at work_.
@@ -827,6 +847,7 @@ for _, col := range ts.Columns {
 **Thoughts:** `brainpower := interface{}`
 
 ---
+
 ## Day 48, November 19, 2019
 
 **Today's Progress:** Wrote an initial function to return `true` or `false` on whether a row of cells is _relevant_ to the current 'update' record read-in from my CSV.
@@ -838,6 +859,7 @@ E.g: a CSV record is read into a slice of strings, regardless of _what_ the data
 **Thoughts:**
 
 ---
+
 ## Day 49, November 20, 2019
 
 **Today's Progress:** Matching CSV rows to corresponding JSON objects from the cloud-based spreadsheet. Each `cell` has a `"displayValue"` field, which is always a string. a CSV `record` is always a string. So the comparison checks works accurately and cleanly in my code. Currently working out the inner, core logic of the program; and will then need to properly `PUT` the JSON to the sheet. Then this little project is effectively finished!
@@ -845,6 +867,7 @@ E.g: a CSV record is read into a slice of strings, regardless of _what_ the data
 **Thoughts:**
 
 ---
+
 ## Day 50, November 21, 2019
 
 **Today's Progress:** Changes from the CSV record are being made to the underlying JSON cell. Marshalling the Go representation, and handing off to the http client to `PUT` back into the cloud-spreadsheet. **Awesome**. It's working, after a few http 400 responses, I discovered a cell's values (which I do not need to check/change) aren't copying through to JSON - hard-coded data to check whether the PUT request works thereafter; it is!
@@ -854,20 +877,23 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 **Thoughts:**
 
 ---
+
 ## Day 51, November 22, 2019
 
-**Today's Progress:** Reading today, some bits on the `os` package. 
+**Today's Progress:** Reading today, some bits on the `os` package.
 
 **Thoughts:**
 
 ---
+
 ## Day 52, November 23, 2019
 
 **Today's Progress:** Began cleaning up my spreadsheet program, setting the filename dynamically by reading all files in the directory. Also watched some videos coming out of KubeCon19, did some industry reading, and setup VIM with code snippets - I think I'm ok now to _not_ keep typing `fmt.Printf(...)` char by char :). Or `if err != nil {...}`...
 
-**Thoughts:** Little things make the difference, probably should have invested the time to optomise VIM a bit sooner! 
+**Thoughts:** Little things make the difference, probably should have invested the time to optomise VIM a bit sooner!
 
 ---
+
 ## Day 53, November 24, 2019
 
 **Today's Progress:** Started reading about `k3s` and serverless approaches, and I want to get into the Kubernetes realm; Docker and Kubernetes' being built in Go was a major factor in my deciding to learn the language - I see (from a distance) the impact both technologies are having in the enterprise applications / data center spaces.
@@ -875,13 +901,15 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 **Thoughts:** Why doesn't my Mac have `systemd`?
 
 ---
+
 ## Day 54, November 25, 2019
 
-**Today's Progress:** Finished (for now) refactoring my spreadsheet program. More time spent on k3s, learning how it's different than k8s; I feel silly for trying to install either directly on my Mac - Kubernetes is about orchestrating _Linux containers_ after all. OSS, Linux, _duhh_. 
+**Today's Progress:** Finished (for now) refactoring my spreadsheet program. More time spent on k3s, learning how it's different than k8s; I feel silly for trying to install either directly on my Mac - Kubernetes is about orchestrating _Linux containers_ after all. OSS, Linux, _duhh_.
 
 **Thoughts:** Raspberry Pi it is!
 
 ---
+
 ## Day 55, November 26, 2019
 
 **Today's Progress:** Started reading _"Kubernetes: Up and Running"_ via a PDF freely given away by Microsoft Azure. Generally lose patience reading PDFs; will likely buy a physical copy, but this is incredibly helpful to kick-start my `k8s` journey. Also spent time scoping out a new work-related project I can use Go for: parsing PDF documents to produce tabular data which is used for other tracking purposes.
@@ -889,6 +917,7 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 **Thoughts:**
 
 ---
+
 ## Day 56, November 27, 2019
 
 **Today's Progress:** Kubernetes reading and video watching today, ordered a RPi 4, so will soon be setting up my 'home-lab'. Learned / realised today Pods can mount fibre channel volumes.
@@ -896,6 +925,7 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 **Thoughts:** Wonder how often the containerisation and SAN worlds conjoin...
 
 ---
+
 ## Day 57, November 28, 2019
 
 **Today's Progress:** Installed `kubectl` and `minikube` on my machine, hoping to explore Kubernetes hands-on as much as possible before my Raspberry Pi arrives next week. Having trouble with `minikube start` and my VirtualBox installation; using the embedded KataKoda on kubernetes.io
@@ -903,13 +933,15 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 **Thoughts:**
 
 ---
+
 ## Day 58, November 29, 2019
 
-**Today's Progress:** More _Kubernetes: Up and Running_ reading today; still reading through the high-level descriptions, and components. What I most have internalised is that Kubernetes implements an immutable 'snap shot' of an application + infrastructure. Immutability is achieved via containers / container images. Virtual Box isn't playing nice on my machine; I've scrapped it altogether for `multipass` - it just works! 
+**Today's Progress:** More _Kubernetes: Up and Running_ reading today; still reading through the high-level descriptions, and components. What I most have internalised is that Kubernetes implements an immutable 'snap shot' of an application + infrastructure. Immutability is achieved via containers / container images. Virtual Box isn't playing nice on my machine; I've scrapped it altogether for `multipass` - it just works!
 
 **Thoughts:** There will be so much to learn
 
 ---
+
 ## Day 59, November 30, 2019
 
 **Today's Progress:** Successfully ran my first kubernetes cluster on my macbook today. Using k3s, and multipass to create linux VMs; so excited for my RPi to arrive so the home lab comes even more real.
@@ -917,17 +949,20 @@ So tomorrow I'll investigate this further, and make sure I don't have to be hack
 **Thoughts:**
 
 ---
+
 ## Day 60, December 1, 2019
 
-**Today's Progress:** Spent the majority of the day getting my day-zero ducks in-a-row for setting up a k8s cluster once my RPi arrives. Three general steps: 
-   1. flash my OS on the SD card
-   2. fire-up the RPi, and prep it as the `master` node
-   3. provision a few VMs, and add to the cluster
-Also took advantage of the cyber Monday deals for the CNCF & Linux Foundation's partnership on the CKA training / exam. Yes!!
+**Today's Progress:** Spent the majority of the day getting my day-zero ducks in-a-row for setting up a k8s cluster once my RPi arrives. Three general steps:
+
+1.  flash my OS on the SD card
+2.  fire-up the RPi, and prep it as the `master` node
+3.  provision a few VMs, and add to the cluster
+    Also took advantage of the cyber Monday deals for the CNCF & Linux Foundation's partnership on the CKA training / exam. Yes!!
 
 **Thoughts:**
 
 ---
+
 ## Day 61, December 2, 2019
 
 **Today's Progress:** Have my RPi 4 online; though with only one board I'm trying to create one or two VMs. `multipass` isn't playing nice with `qemu`. Looking into virtualisation for Ubuntu on Raspberry Pi.
@@ -935,6 +970,7 @@ Also took advantage of the cyber Monday deals for the CNCF & Linux Foundation's 
 **Thoughts:**
 
 ---
+
 ## Day 62, December 3, 2019
 
 **Today's Progress:** After two days of solving unexpected, nested issues; I have my RPi running Ubuntu Server 19.10 running VMs via KVM, Qemu, and a Ubuntu iso installed by virt-installer. Now watch multipass releases a fix for `qemu` tomorrow ^.^
@@ -942,15 +978,17 @@ Also took advantage of the cyber Monday deals for the CNCF & Linux Foundation's 
 **Thoughts:**
 
 ---
+
 ## Day 63, December 4, 2019
 
-**Today's Progress:** Installed a fan for the Raspberry Pi, and put the unit in a case. The case isn't great - the board doesn't line up perfectly with the port holes; the SD card is a bit tight. It's booting, and running fine though. 
+**Today's Progress:** Installed a fan for the Raspberry Pi, and put the unit in a case. The case isn't great - the board doesn't line up perfectly with the port holes; the SD card is a bit tight. It's booting, and running fine though.
 
 Finished reading Chatper 2 material for CKA training
 
 **Thoughts:**
 
 ---
+
 ## Day 64, December 5, 2019
 
 **Today's Progress:** Have `k3s` installed on my master and VMs - though the server is "refusing to connect". I think I've forgotten to disable `swap`. Will trouble shoot the details tomorrow.
@@ -961,4 +999,12 @@ Hot tip - copy files from a host to a VM with the `scp` command: e.g.
 scp localfile.xyz user@<VMs IP addr>:/destin/ation/path
 ```
 
-**Thoughts:** I haven't spent this much time  at the CLI since installing Arch on a Dell XPS 13 with a Broadcom wireless card ^.^
+**Thoughts:** I haven't spent this much time at the CLI since installing Arch on a Dell XPS 13 with a Broadcom wireless card ^.^
+
+---
+
+## Day 65, December 6, 2019
+
+**Today's Progress:** Still stuck on server refusing to connect, after ensuring swap was disabled. Missing the clues at the moment.
+
+**Thoughts:**

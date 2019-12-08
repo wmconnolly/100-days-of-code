@@ -1008,3 +1008,11 @@ scp localfile.xyz user@<VMs IP addr>:/destin/ation/path
 **Today's Progress:** Still stuck on server refusing to connect, after ensuring swap was disabled. Missing the clues at the moment.
 
 **Thoughts:**
+
+---
+
+## Day 66, December 7, 2019
+
+**Today's Progress:** Day 66 was yesterday, and a long one of 7+ hours; ostensibly have a cluster running; but my second VM is _not_ actually joining the cluster... What a journey!
+
+**Thoughts:**

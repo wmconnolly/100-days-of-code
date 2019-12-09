@@ -1016,3 +1016,11 @@ scp localfile.xyz user@<VMs IP addr>:/destin/ation/path
 **Today's Progress:** Day 66 was yesterday, and a long one of 7+ hours; ostensibly have a cluster running; but my second VM is _not_ actually joining the cluster... What a journey!
 
 **Thoughts:**
+
+---
+
+## Day 67, December 8, 2019
+
+**Today's Progress:** VMs for Kubernetes will need a _bridged network_ - currently working on that!
+
+**Thoughts:**

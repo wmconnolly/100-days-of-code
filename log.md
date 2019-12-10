@@ -1024,3 +1024,11 @@ scp localfile.xyz user@<VMs IP addr>:/destin/ation/path
 **Today's Progress:** VMs for Kubernetes will need a _bridged network_ - currently working on that!
 
 **Thoughts:**
+
+---
+
+## Day 68, December 9, 2019
+
+**Today's Progress:** Got a bridged network running, a new VM installed / connected; and a cluster running on my RPi. What an exercise, while it _may not_ be the most advisable path to virtualise a Raspberry Pi; I am so excited I've got a cluster running on a single, dedicated piece of hardware!
+
+**Thoughts:**

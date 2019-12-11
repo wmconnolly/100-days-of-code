@@ -1032,3 +1032,11 @@ scp localfile.xyz user@<VMs IP addr>:/destin/ation/path
 **Today's Progress:** Got a bridged network running, a new VM installed / connected; and a cluster running on my RPi. What an exercise, while it _may not_ be the most advisable path to virtualise a Raspberry Pi; I am so excited I've got a cluster running on a single, dedicated piece of hardware!
 
 **Thoughts:**
+
+---
+
+## Day 69, December 10, 2019
+
+**Today's Progress:** Deployed the test Nginx server according to the CKA labs today - 'scaled' it up to run on all worker nodes, and it was running on the master as well.
+
+**Thoughts:**

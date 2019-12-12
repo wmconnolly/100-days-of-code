@@ -1040,3 +1040,11 @@ scp localfile.xyz user@<VMs IP addr>:/destin/ation/path
 **Today's Progress:** Deployed the test Nginx server according to the CKA labs today - 'scaled' it up to run on all worker nodes, and it was running on the master as well.
 
 **Thoughts:**
+
+---
+
+## Day 70, December 11, 2019
+
+**Today's Progress:** Joined a live stream of a cloud native / Kubernetes meetup, did some CKA exam prep, and brushed up on `systemd` / `systemctl` info.
+
+**Thoughts:**

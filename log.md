@@ -1058,3 +1058,9 @@ scp localfile.xyz user@<VMs IP addr>:/destin/ation/path
 **Thoughts:**
 
 ---
+
+## Day 72, December 13, 2019
+
+**Today's Progress:** Watched some great overivew videos on cgroups, namespaces, TCP/IP, and pod basics. Outlined the steps to make a multi-node cluster from one RPi, will write tomorrow!
+
+**Thoughts:**

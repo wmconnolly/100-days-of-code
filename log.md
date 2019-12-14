@@ -1048,3 +1048,13 @@ scp localfile.xyz user@<VMs IP addr>:/destin/ation/path
 **Today's Progress:** Joined a live stream of a cloud native / Kubernetes meetup, did some CKA exam prep, and brushed up on `systemd` / `systemctl` info.
 
 **Thoughts:**
+
+---
+
+## Day 71, December 12, 2019
+
+**Today's Progress:** Kuberenetes: Up & Running reading only today, revisited the containers chatper.
+
+**Thoughts:**
+
+---

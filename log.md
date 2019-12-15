@@ -1064,3 +1064,11 @@ scp localfile.xyz user@<VMs IP addr>:/destin/ation/path
 **Today's Progress:** Watched some great overivew videos on cgroups, namespaces, TCP/IP, and pod basics. Outlined the steps to make a multi-node cluster from one RPi, will write tomorrow!
 
 **Thoughts:**
+
+---
+
+## Day 73, December 14, 2019
+
+**Today's Progress:** More time with kubectl commands, interacting with the cluster in tandem with 'kuar'. Started writing a guide-equivalent of how I setup my RPi to be a multi-node cluster, will take time to finish. Also made a few tweaks to my personal site.
+
+**Thoughts:**

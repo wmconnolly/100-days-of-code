@@ -1072,3 +1072,11 @@ scp localfile.xyz user@<VMs IP addr>:/destin/ation/path
 **Today's Progress:** More time with kubectl commands, interacting with the cluster in tandem with 'kuar'. Started writing a guide-equivalent of how I setup my RPi to be a multi-node cluster, will take time to finish. Also made a few tweaks to my personal site.
 
 **Thoughts:**
+
+---
+
+## Day 74, December 15, 2019
+
+**Today's Progress:** Have read up to Ch. 5 of Kubernetes: Up & Running. Everything within a k8s cluster is represented in a RESTful architecture; hence "API". But this is helpful in thinking about `kubectl` and its commands, they're CRUD-like; e.g: `k get | apply [POST] | edit [PUT] | delete`... Looking forward to more tomorrow.
+
+**Thoughts:**

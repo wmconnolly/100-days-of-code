@@ -1080,3 +1080,12 @@ scp localfile.xyz user@<VMs IP addr>:/destin/ation/path
 **Today's Progress:** Have read up to Ch. 5 of Kubernetes: Up & Running. Everything within a k8s cluster is represented in a RESTful architecture; hence "API". But this is helpful in thinking about `kubectl` and its commands, they're CRUD-like; e.g: `k get | apply [POST] | edit [PUT] | delete`... Looking forward to more tomorrow.
 
 **Thoughts:**
+
+---
+
+## Day 75, December 16, 2019
+
+**Today's Progress:** Halfway through kuar Ch. 5 on Pods, and re-read the `kubectl` common commands chapter.
+Pods can run multiple containers, but not all containers should be coupled together - the core question is whether the containers can successfully do their job on separate machines. If so, they belong in their own Pod.
+
+**Thoughts:**

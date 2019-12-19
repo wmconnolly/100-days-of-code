@@ -1089,3 +1089,11 @@ scp localfile.xyz user@<VMs IP addr>:/destin/ation/path
 Pods can run multiple containers, but not all containers should be coupled together - the core question is whether the containers can successfully do their job on separate machines. If so, they belong in their own Pod.
 
 **Thoughts:**
+
+---
+
+## Day 76, December 17, 2019
+
+**Today's Progress:** Finished Chatper 5 on Pods, only reading.
+
+**Thoughts:**

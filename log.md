@@ -1097,3 +1097,11 @@ Pods can run multiple containers, but not all containers should be coupled toget
 **Today's Progress:** Finished Chatper 5 on Pods, only reading.
 
 **Thoughts:**
+
+---
+
+## Day 77, December 18, 2019
+
+**Today's Progress:** LFS258 studying; architecture and components, quiz on install and setup.
+
+**Thoughts:**

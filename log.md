@@ -1105,3 +1105,27 @@ Pods can run multiple containers, but not all containers should be coupled toget
 **Today's Progress:** LFS258 studying; architecture and components, quiz on install and setup.
 
 **Thoughts:**
+
+---
+
+## Day 78, December 19, 2019
+
+**Today's Progress:** Web scraping with Python for an extracurricular activity as part of my regular job
+
+**Thoughts:**
+
+---
+
+## Day 79, December 20, 2019
+
+**Today's Progress:** More web scraping today, ready for a kubernetes weekend!
+
+**Thoughts:**
+
+---
+
+## Day 80, December 21, 2019
+
+**Today's Progress:** Back to 'kuar', brushed up on the Pods chapter, started reading the Labels/Annotations chapter
+
+**Thoughts:**

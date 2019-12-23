@@ -1129,3 +1129,11 @@ Pods can run multiple containers, but not all containers should be coupled toget
 **Today's Progress:** Back to 'kuar', brushed up on the Pods chapter, started reading the Labels/Annotations chapter
 
 **Thoughts:**
+
+---
+
+## Day 81, December 22, 2019
+
+**Today's Progress:** Finished the Labels / Annotations chapter, the book states proper usage of both unlocks the true power of kubernetes' flexibility. Pretty important, given I hadn't read much about either before starting kuar :)
+
+**Thoughts:**

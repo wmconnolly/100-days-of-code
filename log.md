@@ -1137,3 +1137,11 @@ Pods can run multiple containers, but not all containers should be coupled toget
 **Today's Progress:** Finished the Labels / Annotations chapter, the book states proper usage of both unlocks the true power of kubernetes' flexibility. Pretty important, given I hadn't read much about either before starting kuar :)
 
 **Thoughts:**
+
+---
+
+## Day 82, December 23, 2019
+
+**Today's Progress:** Read the kuar chapter on Service Discovery. Exposing a deployment object triggers the creation of a service object under-the-hood, networking the pods via `kube-proxy`
+
+**Thoughts:**

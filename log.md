@@ -1145,3 +1145,19 @@ Pods can run multiple containers, but not all containers should be coupled toget
 **Today's Progress:** Read the kuar chapter on Service Discovery. Exposing a deployment object triggers the creation of a service object under-the-hood, networking the pods via `kube-proxy`
 
 **Thoughts:**
+
+---
+
+## Day 83, December 24, 2019
+
+**Today's Progress:** Spent time on TCP/IP, to get a stronger sense of addressing. Also looking to become a tmux user, it seems like it is to the command line what vim is to editing. Also wondering how custom configs play out for sitting the CKA exam
+
+**Thoughts:**
+
+---
+
+## Day 84, December 25, 2019
+
+**Today's Progress:** Up and running with tmux, and stretched my fingers on some k8s commands. Studying tomorrow
+
+**Thoughts:**

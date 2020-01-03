@@ -1161,3 +1161,12 @@ Pods can run multiple containers, but not all containers should be coupled toget
 **Today's Progress:** Up and running with tmux, and stretched my fingers on some k8s commands. Studying tomorrow
 
 **Thoughts:**
+
+---
+
+## Day 85 - 91 (January 1, 2020)
+
+**Today's Progress:**
+Holiday break; AKA cooking, cleaning, repeating
+
+**Thoughts:**

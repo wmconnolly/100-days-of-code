@@ -1170,3 +1170,12 @@ Pods can run multiple containers, but not all containers should be coupled toget
 Holiday break; AKA cooking, cleaning, repeating
 
 **Thoughts:**
+
+---
+
+## Day 92, January 2, 2020
+
+**Today's Progress:**
+Continued writing a post setting up `k3s` on a fresh RPi w/ Ubuntu Server. More CKA analysis as well.
+
+**Thoughts:**

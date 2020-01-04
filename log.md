@@ -1179,3 +1179,13 @@ Holiday break; AKA cooking, cleaning, repeating
 Continued writing a post setting up `k3s` on a fresh RPi w/ Ubuntu Server. More CKA analysis as well.
 
 **Thoughts:**
+
+---
+
+## Day 93, January 3, 2020
+
+**Today's Progress:**
+
+Using the KodeKloud Udemy course to help prep for the CKA exam, watched through videos up-to the first practice exam.
+
+**Thoughts:**

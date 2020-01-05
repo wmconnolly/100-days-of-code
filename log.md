@@ -1189,3 +1189,12 @@ Continued writing a post setting up `k3s` on a fresh RPi w/ Ubuntu Server. More 
 Using the KodeKloud Udemy course to help prep for the CKA exam, watched through videos up-to the first practice exam.
 
 **Thoughts:**
+
+---
+## Day 94, January 4, 2020
+
+**Today's Progress:** 
+
+KodeKloud CKA first practice test completed, on Pods
+
+**Thoughts:**

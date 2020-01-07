@@ -1198,3 +1198,21 @@ Using the KodeKloud Udemy course to help prep for the CKA exam, watched through 
 KodeKloud CKA first practice test completed, on Pods
 
 **Thoughts:**
+
+---
+## Day 95, January 5, 2020
+
+**Today's Progress:** 
+
+Missed day.
+
+**Thoughts:**
+
+---
+## Day 96, January 6, 2020
+
+**Today's Progress:** 
+
+KodeKloud lectures and practice tests completed on ReplicaSets, Deployments, and Namespaces. Lectures only on Services.
+
+**Thoughts:**

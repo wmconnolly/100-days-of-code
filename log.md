@@ -1216,3 +1216,12 @@ Missed day.
 KodeKloud lectures and practice tests completed on ReplicaSets, Deployments, and Namespaces. Lectures only on Services.
 
 **Thoughts:**
+
+---
+## Day 97, January 7, 2020
+
+**Today's Progress:** 
+
+Cold test attempt on services went well, also completed the imperative commands test which finished all core concepts materials. Now onto section 3, Scheduling. Completed lectures / practice tests for manual scheduling, and labels/selectors.
+
+**Thoughts:**

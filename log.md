@@ -1225,3 +1225,12 @@ KodeKloud lectures and practice tests completed on ReplicaSets, Deployments, and
 Cold test attempt on services went well, also completed the imperative commands test which finished all core concepts materials. Now onto section 3, Scheduling. Completed lectures / practice tests for manual scheduling, and labels/selectors.
 
 **Thoughts:**
+
+---
+## Day 98, January 8, 2020
+
+**Today's Progress:** 
+
+Completed the KodeKloud lecture / practice test on tolerances & taints. Spent some time pondering the CKA exam environment; will I have access to my own dotfiles...? Putting a folder together I could curl to the master node
+
+**Thoughts:**

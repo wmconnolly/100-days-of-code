@@ -1234,3 +1234,12 @@ Cold test attempt on services went well, also completed the imperative commands 
 Completed the KodeKloud lecture / practice test on tolerances & taints. Spent some time pondering the CKA exam environment; will I have access to my own dotfiles...? Putting a folder together I could curl to the master node
 
 **Thoughts:**
+
+---
+## Day 99, January 9, 2020
+
+**Today's Progress:** 
+
+Lecutes and practice test completed on Node affinity - my first encounter with a bit of nasty yaml, though like most syntax I'm sure it becomes palatable after spending more time with it.
+
+**Thoughts:**

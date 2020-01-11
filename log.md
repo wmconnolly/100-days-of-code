@@ -1243,3 +1243,14 @@ Completed the KodeKloud lecture / practice test on tolerances & taints. Spent so
 Lecutes and practice test completed on Node affinity - my first encounter with a bit of nasty yaml, though like most syntax I'm sure it becomes palatable after spending more time with it.
 
 **Thoughts:**
+
+---
+## Day 100, January 10, 2020
+
+**Today's Progress:** 
+
+100th day - wow! (Actually 101st day, per zero-based index). 100 Days Of Code proves the cumulative power of consistency; insurmountable topics made accesible by showing up _daily_. Thanks kindly to the folks who've engaged with me, the community aspect makes all the difference, and I feel so grateful for taking on this challenge!
+
+Actual coding today: Python @ work + KodeKloud CKA studying. My adventure will continue with my goal of earning a CKA cert, using the #100DaysOfCloud tag.
+
+**Thoughts:**
